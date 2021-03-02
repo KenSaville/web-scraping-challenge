@@ -25,7 +25,7 @@ def scrape():
     browser = init_browser()
     
     #define dictionary for storing values to return
-    scraped_data = {}
+    mars_data = {}
 
     #define initial url to be scraped and establish browser connection to this url
     url = 'https://mars.nasa.gov/news/'
@@ -65,13 +65,13 @@ def scrape():
         ]
 
     #add all scraped data to scraped_daa dict.  Return dict from function
-    scraped_data['News Title'] = news_title
-    scraped_data['News paragraph'] = news_p
-    scraped_data['Featured image url'] = featured_image_url
-    scraped_data['Mars Facts Table'] = fact_table
-    scraped_data['Hemispheres'] = hemisphere_image_urls
+    mars_data['News Title'] = news_title
+    mars_data['News paragraph'] = news_p
+    mars_data['Featured image url'] = featured_image_url
+    mars_data['Mars Facts Table'] = fact_table
+    mars_data['Hemispheres'] = hemisphere_image_urls
 
-    return scraped_data
+    return mars_data
 
 #run function to see if it works to return dict
 print(scrape())
