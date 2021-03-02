@@ -54,8 +54,11 @@ def scrape():
     
     # scrape new url using pandas, get table data from page
     url = 'https://space-facts.com/mars/'
-    fact_table = pd.read_html(url)
-
+    tables = pd.read_html(url)
+    table = tables[0]
+    table.columns = ["Mars feature", "Value"]
+    fact_table = table.to_html()
+    
     # set up dictionary contiaing hemisphere images from new page
     hemisphere_image_urls = [
         {"title": "Valles Marineris Hemisphere", "img_url": "https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/valles_marineris_enhanced.tif/full.jpg"},
@@ -74,4 +77,5 @@ def scrape():
     return mars_data
 
 #run function to see if it works to return dict
-print(scrape())
+#print(scrape()) - it worked.  Printing out dictionary
+# now need to figure out how to get it to mongo and to the web site
