@@ -73,6 +73,7 @@ def scrape():
     mars_data['Featured image url'] = featured_image_url
     mars_data['Mars Facts Table'] = fact_table
     mars_data['Hemispheres'] = hemisphere_image_urls
+    mars_data['Test'] = "this part worked at least"
 
     return mars_data
 
