@@ -68,10 +68,10 @@ def scrape():
         ]
 
     #add all scraped data to scraped_daa dict.  Return dict from function
-    mars_data['News Title'] = news_title
-    mars_data['News paragraph'] = news_p
-    mars_data['Featured image url'] = featured_image_url
-    mars_data['Mars Facts Table'] = fact_table
+    mars_data['News_Title'] = news_title
+    mars_data['News_Paragraph'] = news_p
+    mars_data['Featured_image_url'] = featured_image_url
+    mars_data['Mars_Facts_Table'] = fact_table
     mars_data['Hemispheres'] = hemisphere_image_urls
     mars_data['Test'] = "this part worked at least"
 

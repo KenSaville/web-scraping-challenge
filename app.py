@@ -20,7 +20,7 @@ def index():
 def scraper():
     mars_data = mongo.db.mars_data # This is the connection to the mongo database
     mars_data_scraped = scrape_mars.scrape() #This runs the scrape function and stores returned dict
-    mars_data.update_one({}, mars_data_scraped, upsert=True) #this adds scraped data to mongo db
+    mars_data.update({},mars_data_scraped, upsert=True) #this adds scraped data to mongo db
     return redirect("/", code=302)
 
 

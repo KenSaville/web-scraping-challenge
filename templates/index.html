@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Mission to Mars</title>
+  <title>Mission to Mars - TEST2</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
@@ -25,8 +25,8 @@
     </br>
       <div class="row">
         <div class="col-md-12">
-          <h4>{{mars_data.news_title}}</h4>
-          <p>{{mars_data.news_p}}</p>
+          <h4>{{mars_data.News_Title}}</h4>
+          <p>{{mars_data.News_Paragraph}}</p>
         </div>
       </div>
     <hr>
@@ -34,12 +34,12 @@
         <div class="col-md-8 border">
           <h2 class=""><u>Featured Mars Image</u></h2> 
           </br>
-          <img src="{{mars_data.featured_image_url}}" alt="Latest Mars Image">
+          <img src="{{mars_data.Featured_image_url}}" alt="Latest Mars Image">
         </div>
           </br>
           <div class="border">
             <h5>Mars Facts</h5>
-              {{ mars_data.fact_table | safe }}
+              {{mars_data.Mars_Facts_Table}}
           </div>
         </div>
       </div>
@@ -59,7 +59,7 @@
                       </div>
   
                       <div>
-                        <h4> {{ hemisphere.title | safe }} </h4>  
+                        <h4> {{ hemisphere.title}} </h4>  
                       </div>
               
                 </div>
