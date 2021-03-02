@@ -16,7 +16,7 @@ import pymongo
 def init_browser():
     # Setup splinter
     executable_path = {"executable_path": "chromedriver"}
-    browser = Browser("chrome", **executable_path , headless=False)
+    return Browser("chrome", **executable_path , headless=False)
 
 # scrape function
 
