@@ -57,6 +57,7 @@ def scrape():
     tables = pd.read_html(url)
     table = tables[0]
     table.columns = ["Mars feature", "Value"]
+    table = table.set_index("Mars feature")
     fact_table = table.to_html()
     
     # set up dictionary contiaing hemisphere images from new page
