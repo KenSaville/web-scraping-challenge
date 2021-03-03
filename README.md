@@ -57,7 +57,7 @@ all scraping code from above and returns one Python dictionary containing all of
 
 * Created a template HTML file called `index.html` that takes the mars data dictionary and displays all of the data in the appropriate HTML elements. Use the following as a guide for what the final product should look like, but feel free to create your own design.
 
-Images
+Images are in screenshot folder of this repo.
 
 
 
